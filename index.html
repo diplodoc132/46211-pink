@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="" class="logo"><img src="" alt=""></a>
-      <nav class="top-menu">
+      <a href="" class="page-header__logo"><img src="" alt=""></a>
+      <nav class="page-header__nav">
         <ul>
           <li><a href="#">информация</a></li>
           <li><a href="#">блог</a></li>
@@ -18,100 +18,100 @@
     </header>
     <main>
       <div class="intro">
-        <span class="intro-frase">Взгляните на жизнь иначе!</span>
-        <div class="iphone-hand"></div>
+        <span class="intro__frase">Взгляните на жизнь иначе!</span>
+        <div class="inrto__bg-image"></div>
       </div>
-      <section class="download">
+      <section class="download-app">
         <form action="">
-          <input type="submit" name="download-app" class="download-app">
+          <input type="submit" name="download-app" class="download-app__btn">
         </form>
-        <div class="app-icons-container">
-          <div class="app-icon apple"></div>
-          <div class="app-icon android"></div>
-          <div class="app-icon windows"></div>
+        <div class="download-app__icons-container">
+          <div class="download-app-icon download-app-apple"></div>
+          <div class="download-app-icon download-app-android"></div>
+          <div class="download-app-icon download-app-windows"></div>
         </div>
-        <span>Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</span>
+        <span class="download-app__available">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</span>
       </section>
-      <section class="proposition">
-        <span>Устали от серости мегаполиcа?</span>
-        <span>Нам есть, что Вам предложить!</span>
+      <section class="promo">
+        <span class="promo__promo-text1">Устали от серости мегаполиcа?</span>
+        <span class="promo__promo-text2">Нам есть, что Вам предложить!</span>
       </section>
       <section class="features">
-        <div class="feature">
-          <div>Поднимает настроение</div>
-          <p>Приложениие позволит Вам победить осеннюю хандру и депрессию буквально в неколько кликов!</p>
+        <div class="features__item">
+          <div class="features__title">Поднимает настроение</div>
+          <p class="features__description">Приложениие позволит Вам победить осеннюю хандру и депрессию буквально в неколько кликов!</p>
         </div>
-        <div class="feature">
-          <div>Меняет  мир вокруг</div>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <div class="features__item">
+          <div class="features__title">Меняет  мир вокруг</div>
+          <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
-        <div class="feature">
-          <div>Заводит новых друзей</div>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="features__item">
+          <div class="features__title">Заводит новых друзей</div>
+          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
       </section>
-      <section class="slider feedback">
-        <input type="radio" id="btn-feedback-1" name="toggle" checked>
-        <input type="radio" id="btn-feedback-2" name="toggle">
-        <input type="radio" id="btn-feedback-3" name="toggle">
-        <div class="slider-controls">
+      <section class="slider-feedback">
+        <input type="radio" id="btn-feedback-1" name="toggle" class="slider-feedback__toggle" checked>
+        <input type="radio" id="btn-feedback-2" name="toggle" class="slider-feedback__toggle">
+        <input type="radio" id="btn-feedback-3" name="toggle" class="slider-feedback__toggle">
+        <div class="slider-feedback slider-controls">
           <lable for="btn-feedback-1"></lable>
           <lable for="btn-feedback-2"></lable>
           <lable for="btn-feedback-3"></lable>
         </div>
-        <div class="slides">
-          <div class="slide">
-            <div>Николай Петров</div>
-            <blockquote>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познекомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+        <div class="slider-feedback__slides-container">
+          <div class="slider-feedback__slide">
+            <div class="slider-feddback__slide-title">Николай Петров</div>
+            <blockquote class="slider-feedback__slide-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познекомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
           </div>
-          <div class="slide">
-            <div>Николай Петров</div>
-            <blockquote>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познекомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+          <div class="slider-feedback__slide">
+            <div class="slider-feddback__slide-title">Николай Петров</div>
+            <blockquote class="slider-feedback__slide-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познекомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
           </div>
-          <div class="slide">
-            <div>Николай Петров</div>
-            <blockquote>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познекомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+          <div class="slider-feedback__slide">
+            <div class="slider-feddback__slide-title">Николай Петров</div>
+            <blockquote class="slider-feedback__slide-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познекомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
           </div>
         </div>
       </section>
-      <section class="slider rates">
-        <input type="radio" id="btn-rates-1" name="toggle">
-        <input type="radio" id="btn-rates-2" name="toggle" checked>
-        <input type="radio" id="btn-rates-3" name="toggle">
-        <div class="slider-controls">
+      <section class="slider-rates">
+        <input type="radio" id="btn-rates-1" name="toggle" class="slider-rates__toggle">
+        <input type="radio" id="btn-rates-2" name="toggle" class="slider-rates__toggle" checked>
+        <input type="radio" id="btn-rates-3" name="toggle" class="slider-rates__toggle">
+        <div class="slider-rates slider-controls">
           <lable for="btn-rates-1"></lable>
           <lable for="btn-rates-2"></lable>
           <lable for="btn-rates-3"></lable>
         </div>
-        <div class="slides">
-          <div class="slide">
-            <div class="rate-name">
-              <div>стандарт</div>
-              <div>3,99 USD</div>
+        <div class="slider-rates__slides-container">
+          <div class="slider-rates__slide">
+            <div class="slider-rates__slide-title">
+              <div class="slider-rates__rate-name">стандарт</div>
+              <div class="slider-rates__rate-price">3,99 USD</div>
             </div>
-            <ul class="rate-features">
+            <ul class="slider-rates__rate-features">
               <li>розовый фильтр</li>
               <li>смайлики</li>
               <li>комментарии</li>
             </ul>
           </div>
-          <div class="slide">
-            <div class="rate-name">
-              <div>стандарт</div>
-              <div>3,99 USD</div>
+          <div class="slider-rates__slide">
+            <div class="slider-rates__slide-title">
+              <div class="slider-rates__rate-name">стандарт</div>
+              <div class="slider-rates__rate-price">3,99 USD</div>
             </div>
-            <ul class="rate-features">
+            <ul class="slider-rates__rate-features">
               <li>розовый фильтр</li>
               <li>смайлики</li>
               <li>комментарии</li>
             </ul>
           </div>
-          <div class="slide">
-            <div class="rate-name">
-              <div>стандарт</div>
-              <div>3,99 USD</div>
+          <div class="slider-rates__slide">
+            <div class="slider-rates__slide-title">
+              <div class="slider-rates__rate-name">стандарт</div>
+              <div class="slider-rates__rate-price">3,99 USD</div>
             </div>
-            <ul class="rate-features">
+            <ul class="slider-rates__rate-features">
               <li>розовый фильтр</li>
               <li>смайлики</li>
               <li>комментарии</li>
@@ -122,14 +122,13 @@
     </main>
     <footer class="page-footer">
       <section class="contact-us">
-        <div>Остались вопросы?</div>
-        <div>Свяжитесь с нами!</div>
-        <div>Звоните:<br>
-        +7(812)5556666</div>
-        <div>Пишите:<br>
-        mail@htmlacademy.ru</div>
-        <div>Приезжайте в гости:<br>
-        ул. Большая Конюшенная, 19/8</div>
+        <div class="contact-us__questions">Остались вопросы?<br>Свяжитесь с нами!</div>
+        <div class="contact-us__call-write-come">Звоните:</div>
+        <div class="contact-us__info">+7(812)5556666</div>
+        <div class="contact-us__call-write-come">Пишите:</div>
+        <div class="contact-us__info">mail@htmlacademy.ru</div>
+        <div class="contact-us__call-write-come">Приезжайте в гости:</div>
+        <div class="contact-us__info">ул. Большая Конюшенная, 19/8</div>
       </section>
     </footer>
   </body>
