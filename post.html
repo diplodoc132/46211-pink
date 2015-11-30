@@ -5,66 +5,63 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
-  <header class="page-header">
-    <a href="" class="logo"></a>
-    <nav class="top-menu">
-      <ul>
-        <li><a href="#">информация</a></li>
-        <li><a href="#">блог</a></li>
-        <li><a href="#">отзывы</a></li>
-        <li><a href="#">конкурс</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="blog-name">
-      <span>Блог путешественников, пользователей Пинк</span>
-    </div>
-    <article>
-      <header class="post-header">
-        <h1>Антон и Надя в Тайланде</h1>
-        <div>Опубликовано: <time datetime="2015-05-15">6 месяцев назад</time><!--или как--></div>
-        <p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
-      </header>
-      <section>
-        <div>предыстория</div>
-        <p>В Азию нам хотелось попасть уже давно, но все время что-то останавливало. Также не давал покоя вопрос гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на skyscanner.ru мы все-таки решились!</p>
-      </section>
-      <section>
-        <span>выбор отеля</span>
-        <p>В Тайланде огромный разброс по стоимости отелей и так же сильно отличаются и они сами. Так как достопримечательности щедро разбросаны по всей стране, то чтобы посетить их все, нужно пожить в нескольких разных городах. В итоге мы остановились на следующих:</p>
+    <header class="page-header">
+      <a href="" class="page-header__logo"><img src="" alt=""></a>
+      <nav class="page-header__nav">
         <ul>
+          <li><a href="#">информация</a></li>
+          <li><a href="#">блог</a></li>
+          <li><a href="#">отзывы</a></li>
+          <li><a href="#">конкурс</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+      <h1 class="page-title">Блог путешественников, пользователей Пинк</h1>
+    <article class="post">
+      <header class="post__header">
+        <h1 class="post__title">Антон и Надя в Тайланде</h1>
+        <div class="post__date">Опубликовано: <time datetime="2015-05-15">6 месяцев назад</time></div>
+        <p class="post__prevew">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
+      </header>
+      <section class="post_part">
+        <div class="post__part-title">предыстория</div>
+        <p class="post__part-text">В Азию нам хотелось попасть уже давно, но все время что-то останавливало. Также не давал покоя вопрос гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на skyscanner.ru мы все-таки решились!</p>
+      </section>
+      <section class="post_part">
+        <div class="post__part-title">выбор отеля</div>
+        <p class="post__part-text">В Тайланде огромный разброс по стоимости отелей и так же сильно отличаются и они сами. Так как достопримечательности щедро разбросаны по всей стране, то чтобы посетить их все, нужно пожить в нескольких разных городах. В итоге мы остановились на следующих:</p>
+        <ul class="post__hotels-list">
           <li>Point Yamu by Como (Пхукет)</li>
           <li>Amari Vogue Hotel (Краби)</li>
           <li>Photo Hotel (Пхукет)</li>
         </ul>
-        <p>В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvi-sor. Например, вот, что пишут люди про Point Yamu:</p>
-        <blockquote>Замечательное место,в которое хочется вернуться обязательно! Персонал отзывчивый и внимательный,еда-потрясающая. Отель расположен в тихом и уединенном месте-в чем вся и прелесть. СПА отличный. Потрясающие виды.</blockquote>
-        <cite>Олег, г. Москва</cite>
+        <p class="post__part-text">В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvi-sor. Например, вот, что пишут люди про Point Yamu:</p>
+        <blockquote  class="post__cite">Замечательное место,в которое хочется вернуться обязательно! Персонал отзывчивый и внимательный,еда-потрясающая. Отель расположен в тихом и уединенном месте-в чем вся и прелесть. СПА отличный. Потрясающие виды.</blockquote>
+        <cite  class="post__cite-sourse">Олег, г. Москва</cite>
         </section>
-      <section>
-        <span>Местная еда</span>
-        <p>Существует мнение, что вся еда в Тайланде экстремально острая. Это мнение сложилось не напрасно! Но не стоит делать из этого проблему — просто попросите сделать ваше блюдо «not spicy». Желающие могут попробовать жареных тараканчиков.Мы не рискнули.
+      <section class="post_part">
+        <div class="post__part-title">Местная еда</div>
+        <p class="post__part-text">Существует мнение, что вся еда в Тайланде экстремально острая. Это мнение сложилось не напрасно! Но не стоит делать из этого проблему — просто попросите сделать ваше блюдо «not spicy». Желающие могут попробовать жареных тараканчиков.Мы не рискнули.
         </p>
       </section>
     </article>
-    <section>
+    <section class="post__pagination">
     <a href="#">пред.</a>
     <a href="#">след.</a>
     <a href="#">назад к списку</a>
     </section>
     <footer class="page-footer">
-      <div class="logo"><img src="" alt=""></div>
-      <section class="share-icons-container">
-        <div class="share-icon twitter"></div>
-        <div class="share-icon facebook"></div>
-        <div class="share-icon youtube"></div>
-      </section>
+      <div class="page-footer__logo"><img src="" alt="logo"></div>
+      <ul class="social-links">
+        <li><a href="" class="social-links__item social-links__tw"></a></li>
+        <li><a href="" class="social-links__item social-links__fb"></a></li>
+        <li><a href="" class="social-links__item social-links__yt"></a></li>
+      </ul>
       <section class="copyright">
-        <span>Разработано</span>
-        <img src="" class="logo-academy" alt="">
+        <span class="copyright__developer-name">Разработано</span>
+        <img src="" class="copyright__developer-logo"alt="htmlacademy">
       </section>
     </footer>
-  </main>
-</body>
+  </body>
 </html>
