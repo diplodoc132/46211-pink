@@ -1,0 +1,103 @@
+.slider-rates{
+	position: relative;
+	width: 320px;
+	min-height: 445px;
+	background-color: @grey-bg;
+}
+.slider-rates__slides-container{
+	width: 320px;
+	min-height: 285px;
+	padding-top: 65px;
+}
+.slider-rates__slide{
+	width: 100%;
+	height: 100%;
+}
+.slider-rates__title{
+	width: 100%;
+	min-height: 100px;
+	padding-top: 23px;
+	text-align: center;
+	background-color: @dark-blue-bg;
+	color: white;
+}
+.slider-rates__name{
+	width: 100%;
+	min-height: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Open Sans Bold";
+	text-transform: uppercase;
+}
+.slider-rates__price{
+	width: 100%;
+	min-height: 30px;
+	font-size: 24px;
+	font-family: "Open Sans Light";
+}
+.slider-rates__features{
+	width: 100%;
+	min-height: 180px;
+	margin: 0;
+	padding:0;
+	list-style: none;
+	background-color: white;
+	li{
+		width:100%;
+		min-height: 58px;
+		padding-left: 45px;
+		font-size: 14px;
+		line-height: 58px;
+		text-transform: uppercase;
+		font-family: "Open Sans Regular";
+		color: @dark-blue-font;
+		border-bottom: 2px solid @grey-border;
+	}
+}
+.slider-rates input[type=radio]{
+	position: absolute;
+	opacity: 0;
+}
+.slider-rates__controls{
+	position: absolute;
+	top:398px;
+	left: 50%;
+	width: 200px;
+	min-height: 15px;
+	margin-left: -100px;
+	text-align: center;
+}
+.slider-rates__controls{
+	label{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 8px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: @light-grey-radio;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	cursor: pointer;
+	}
+	label:active{
+		background-color: white;
+		border: 3px solid @dark-blue-font;	
+	}
+}
+#btn-rates-1:checked ~ .slider-feedback__controls label[for="btn-rates-1"],
+#btn-rates-2:checked ~ .slider-feedback__controls label[for="btn-rates-2"],
+#btn-rates-3:checked ~ .slider-feedback__controls label[for="btn-rates-3"]{
+	background-color: white;
+	border: 3px solid @dark-blue-font;	
+}
+#btn-rates-1:checked ~ .slider-rates__slides-container .slider-rates__slide:nth-child(1){
+		display: block;
+}
+#btn-rates-2:checked ~ .slider-rates__slides-container .slider-rates__slide:nth-child(2){
+		display: block;
+}
+#btn-rates-3:checked ~ .slider-rates__slides-container .slider-rates__slide:nth-child(3){
+		display: block;
+}
