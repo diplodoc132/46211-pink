@@ -1,0 +1,98 @@
+.form-photo{
+	position: relative;
+	width: 100%;
+	min-height: 489px;
+	padding-top: 85px;
+	background-color: @grey-bg;
+}
+.form-legend--photo{
+	position: absolute;
+	width: 270px;
+	min-height: 19px;
+	top:35px;
+	left: 0;
+	margin-left: 25px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-family: "Open Sans Regular";
+	color: @pink-font;
+}
+.form-photo__upload{
+	width: 280px;
+	min-height: 63px;
+	margin-bottom: 68px;
+	padding: 0;
+	background-color: white;
+	border: 2px solid @grey-border;
+	font-size: 18px;
+	text-align: center;
+	line-height: 63px;
+	text-transform: uppercase;
+	font-family: "Open Sans Bold";
+	color: @dark-blue-font;
+	cursor: pointer;
+}
+.form-photo__item{
+	position: relative;
+	float: left;
+	width: 70px;
+	margin: 0 40px 18px 0;
+	min-height: 95px;
+}
+.form-photo__item:nth-child(3n+2){
+	margin:0 0 18px 0;
+}
+.form-photo__name{
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-family: "Open Sans Regular";
+	color: @dark-blue-font;
+}
+.form-photo__delete{
+	position: absolute;
+	top:-15px;
+	left: 53px;
+	width: 29px;
+	height: 29px;
+	background-color: white;
+	border-radius: 50%;
+	border: 2px solid @grey-border;
+	cursor: pointer;
+}
+.form-submit-container{
+	width: 100%;
+	min-height: 162px;
+	padding: 44px 0 0;
+	text-align: center;
+	background-color: white;
+}
+.form-submit{
+	width: 280px;
+	min-height: 63px;
+	background-color: @sucsess;
+	font-size: 18px;
+	text-align: center;
+	line-height: 63px;
+	text-transform: uppercase;
+	font-family: "Open Sans Bold";
+	color: white;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.form-required-field{
+	width: 100%;
+	min-height: 97px;
+	font-size: 14px;
+	line-height: 97px;
+	text-transform: uppercase;
+	font-family: "Open Sans Regular";
+	color: @dark-blue-font;
+	span{
+		color: @pink-font;
+	}
+}

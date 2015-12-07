@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>HTML Academy: Пинк</title>
     <link href="normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -19,139 +21,166 @@
       </nav>
     </header>
     <main>
-      <div class="form-intro">
+      <div class="intro--form">
         <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <div class="intro">  
+      </div>  
       <p class="form-title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
       </p>
-      </section>
       <form action="">
         <fieldset class="form-name">
-          <lable> имя:*
+          <label class="label--name"> имя:*
             <input class="your-name" type="text" name="name" value="Введите ваше имя">
-          </lable>
-          <lable> фамилия:*
+          </label>
+          <label class="label--name"> фамилия:*
             <input class="your-name" type="text" name="surname" value="Укажите фамилию">
-          </lable>
-          <lable> отчество:*
+          </label>
+          <label class="label--name"> отчество:*
             <input class="your-name" type="text" name="middle-name" value="Ну и отчество тоже">
-          </lable>
+          </label>
         </fieldset>  
         <fieldset class="form-apps">
-          <legend class="form-legend">С какиеми приложениями путешествовали?*</legend>
-          <lable
-            <input class="form-apps__item" type="radio" name="app" value="Pink для iOS" checked>
-            Pink для iOS
-          </lable>
-          <lable>
-            <input class="form-apps__item" type="radio" name="app" value="Pink для Android">
-            Pink для Android
-          </lable>
-          <lable>
-            <input class="form-apps__item" type="radio" name="app" value="Pink для Windows Phone">
-            Pink для Windows Phone
-          </lable>
+          <legend class="form-legend--apps">С какиеми приложениями путешествовали?*</legend>
+          <ul>
+            <li>
+              <input id="ios" class="form-apps__item" type="radio" name="app" value="Pink для iOS" checked>
+              <label for="ios" class="label--apps">Pink для iOS</label>
+              </li>
+            <li>
+              <input id="android" class="form-apps__item" type="radio" name="app" value="Pink для Android">
+              <label for="android" class="label--apps">Pink для Android</label>
+            </li>
+            <li>
+              <input id="windows" class="form-apps__item" type="radio" name="app" value="Pink для Windows Phone">
+              <label for="windows" class="label--apps">Pink для Windows Phone</label>
+            </li>  
+          </ul>
         </fieldset>
         <fieldset class="form-date">
-          <legend class="form-legend">Когда вы путешествовали?*</legend>
-          <lable><input class="form-date__arr-dep" type="date" name="date-departure" value="1 апреля 2015">
-          дата выезда </lable>
-          <button class="day+" name="day+" value="+">
-          <lable><input class="form-date__lasting" type="text" name="day-number" value="10 дней">
-          продолжительность</lable>
-          <button class="day-" name="day-" value="-">
-          <lable><input class="form-date__arr-dep" type="date" name="date-arrival" value="1 апреля 2015">
-            дата вoзвращения </lable>
+          <legend class="form-legend--date">Когда вы путешествовали?*</legend>
+          <div class="form-date-container">
+            <label><input class="form-date__arrive-depart" type="date" name="date-departure" value="1 апреля 2015">
+            дата выезда </label>
+          </div>
+          <div class="form-date-container">
+            <button class="plus-minus" name="day+">+</button>
+            <input id="form-date__lasting" type="text" name="day-number" value="10 дней">
+            <button class="plus-minus" name="day-">-</button>
+            <label for="form-date__lasting">продолжительность</label>
+          </div>
+          <div class="form-date-container">
+            <label><input class="form-date__arrive-depart" type="date" name="date-arrival" value="1 апреля 2015">
+              дата вoзвращения </label>
+          </div>
         </fieldset>
         <fieldset class="form-companions">
-          <legend class="form-legend">количество попутчиков:*</legend>
-          <button class="companion+" name="companion+" value="+">
-          <input class="form-companions__number" type="text" name="companion-number" value="2">
-          <button class="companion-" name="companion-" value="-">
-          <div class="form-companions__number-column">
-            <div class="number-symbol">№</div>
-            <div class="number">1</div>
+          <legend class="form-legend--companions">количество попутчиков:*</legend>
+          <button class="plus-minus" name="day-">-</button>
+          <input class="form-companions__number" type="text" name="companion-number" value="2 чел">
+          <button class="plus-minus" name="day-">-</button>
+          <div class="form-companions-container">
+            <div class="form-companions__number-column">
+              <div class="number-symbol">№</div>
+              <div class="number">1</div>
+            </div>
+            <div class="form-companions__name-column">
+              <label> имя:*
+                <input class="form-companions__name" type="text" name="companion1-name" value="Введите ваше имя">
+              </label>
+              <label>прозвище:
+                <input class="form-companions__name" type="text" name="companion1-nickname" value="Ну как же без этого!">
+              </label>
+            </div>
           </div>
-          <div class="form-companions__name-column">
-            <lable> имя:*
-              <input class="form-companions__name" type="text" name="companion1-name" value="Введите ваше имя">
-            </lable>
-            <lable>прозвище:
-              <input class="form-companions__name" type="text" name="companion1-nickname" value="Ну как же без этого!">
-            </lable>
-          </div>
-          <div class="form-companions__number-column">
-            <div class="number-symbol">№</div>
-            <div class="number">2</div>
-          </div>
-          <div class="form-companions__name-column">
-            <lable> имя:*
-              <input class="form-companions__name" type="text" name="companion1-name" value="Введите ваше имя">
-            </lable>
-            <lable>прозвище:
-              <input class="form-companions__name" type="text" name="companion1-nickname" value="Ну как же без этого!">
-            </lable>
+          <div class="form-companions-container">
+            <div class="form-companions__number-column">
+              <div class="number-symbol">№</div>
+              <div class="number">1</div>
+            </div>
+            <div class="form-companions__name-column">
+              <label> имя:*
+                <input class="form-companions__name" type="text" name="companion1-name" value="Введите ваше имя">
+              </label>
+              <label>прозвище:
+                <input class="form-companions__name" type="text" name="companion1-nickname" value="Ну как же без этого!">
+              </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form-achievement">
-          <legend class="form-legend">Ваши безбашенные достижения в путешествии</legend>
-          <lable><input class="form-achievement__item" type="checkbox" name="selfie" checked>Сделал селфи с акулой</lable>
-          <lable><input class="form-achievement__item" type="checkbox" name="bronzage" checked>Обгорел на пляже</lable>
-          <lable><input class="form-achievement__item" type="checkbox" name="chuck" >Видел Чака Норриса</lable>
-          <lable><input class="form-achievement__item" type="checkbox" name="souvenir" >Накупил сувениров</lable>
-          <lable><input class="form-achievement__item" type="checkbox" name="tower" checked>Удержал башню</lable>
-          <lable><input class="form-achievement__item" type="checkbox" name="hotel" >Разгромил отель</lable>
+          <legend class="form-legend--achievement">Ваши безбашенные достижения в путешествии</legend>
+          <ul>
+            <li>
+              <input id="selfie" class="form-achievement__item" type="checkbox" name="selfie" checked><label for="selfie">Сделал селфи с акулой</label>
+            </li>
+            <li>
+              <input  id="tenir" class="form-achievement__item" type="checkbox" name="tenir" checked><label for="tenir">Обгорел на пляже</label>
+            </li>
+            <li>
+              <input  id="chuck" class="form-achievement__item" type="checkbox" name="chuck"><label for="chuck">Видел Чака Норриса</label>
+            </li>
+            <li>
+              <input  id="souvenir" class="form-achievement__item" type="checkbox" name="souvenir"><label for="souvenir">Накупил сувениров</label>
+            </li>
+            <li>
+              <input  id="tower" class="form-achievement__item" type="checkbox" name="tower" checked><label for="tower">Удержал башню</label>
+            </li>
+            <li>
+              <input  id="hotel" class="form-achievement__item" type="checkbox" name="hotel" ><label for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-photo">
-          <legend class="form-legend">ваши фотографии из поездки:*</legend>
+          <legend class="form-legend--photo">ваши фотографии из поездки:*</legend>
           <input class="form-photo__upload" type="submit" name="upload-photo" value="загрузить фото">
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img1.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-1.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img2.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-2.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img3.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-3.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img4.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-4.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img5.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-5.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img6.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-6.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img7.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-7.jpg</figcaption>
           </figure>
           <figure class="form-photo__item">
-            <img class="form-photo__img" src="" alt="">
-            <button class="form-photo__delete" name="delete">
-            <figcaption class="form-photo__name"></figcaption>
+            <img class="form-photo__img" src="img/img8.jpg" alt="">
+            <button class="form-photo__delete" name="delete"></button>
+            <figcaption class="form-photo__name">img-8.jpg</figcaption>
           </figure>
         </fieldset>
-        <input class="form-submit" type="submit" name="submit-form" value="отправить форму">
-        <div class="form-required-field">*-обзательные поля</div>
+        <div class="form-submit-container">
+          <input class="form-submit" type="submit" name="submit-form" value="отправить форму">
+          <div class="form-required-field"><span>*</span>&mdash; обзательные поля</div>
+        </div>
       </form>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__logo"><img src="" alt="logo"></div>
+    <footer class="page-footer--form-page">
+      <div class="page-footer__logo"><img src="img/footer-logo.png" alt="logo"></div>
       <ul class="social-links">
         <li><a href="" class="social-links__item social-links--tw"></a></li>
         <li><a href="" class="social-links__item social-links--fb"></a></li>
@@ -159,7 +188,7 @@
       </ul>
       <section class="copyright">
         <span class="copyright__developer-name">Разработано</span>
-        <a href=""><img src="" class="copyright__developer-logo"alt="htmlacademy"></a>
+        <a href=""><img src="img/logo-academy" class="copyright__developer-logo"alt="htmlacademy"></a>
       </section>
     </footer>
     <!--разметка формы"все ок"-->
