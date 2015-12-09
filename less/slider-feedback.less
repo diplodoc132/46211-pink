@@ -1,7 +1,7 @@
 .slider-feedback{
 	position: relative;
 	width: 320px;
-	min-height: 355px;
+	min-height: 348px;
 	background-color: white;
 }
 .slider-feedback input[type=radio]{
@@ -10,7 +10,7 @@
 }
 .slider-feedback__controls{
 	position: absolute;
-	top:225px;
+	top:262px;
 	left: 50%;
 	width: 200px;
 	min-height: 15px;
@@ -29,6 +29,7 @@
 	border: 3px solid transparent;
 	border-radius: 50%;
 	cursor: pointer;
+	z-index: 8;
 	}
 	label:active{
 		background-color: white;
@@ -39,27 +40,28 @@
 #btn-feedback-2:checked ~ .slider-feedback__controls label[for="btn-feedback-2"],
 #btn-feedback-3:checked ~ .slider-feedback__controls label[for="btn-feedback-3"]{
 	background-color: white;
-	border: 3px solid @dark-blue-font;	
-
+	border: 3px solid @dark-blue-font;
 }
 .slider-feedback__slides-container{
 	width: 320px;
-	height: 335px;
+	height: 324px;
+	z-index: 7;
 }
 .slider-feedback__slide{
 	display: none;
 	position: absolute;
-	top: 0;
+	top: 15px;
 	left: 0;
 	width: 100%;
-	min-height: 100%;
+	min-height: 100px;
 	text-align: center;
 }
-.slider-feddback__slide-title{
+.slider-feedback__slide-title{
 	.features__title;
 }
 .slider-feedback__slide-text{
 	.features__description;
+	line-height: 26px;
 }
 #btn-feedback-1:checked ~ .slider-feedback__slides-container .slider-feedback__slide:nth-child(1){
 		display: block;
@@ -72,6 +74,6 @@
 }
 .slider__gradient{
 	width: 100%;
-	min-height: 35px;
+	min-height: 24px;
 	background-image: linear-gradient(to right bottom, white 50%, @grey-bg 50%);
 }

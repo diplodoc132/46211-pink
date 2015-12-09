@@ -1,3 +1,57 @@
+.page-footer{
+	width: 100%;
+	min-height: 410px;
+	padding-top: 38px;
+	text-align: center;
+}
+.contact-us__questions{
+	width: 100%;
+	min-height: 60px;
+	margin-bottom: 29px;
+	font-size: 24px;
+	font-family: "Open Sans Light";
+	color: @dark-blue-font;
+}
+.contact-us__call-write-come{
+	width: 100%;
+	min-height: 22px;
+	font-size: 18px;
+	font-family: "Open Sans Bold";
+	color: @dark-blue-font;
+}
+.contact-us__info{
+	display: block;
+	width: 90%;
+	min-height: 26px;
+	margin: 0 0 20px;
+	font-size: 24px;
+	font-family: "Open Sans Light";
+	color: @pink-font;
+}
+.footer-gradient{
+	position: relative;
+	top:15px;
+	width: 100%;
+	min-height: 35px;
+	margin-bottom: -35px;
+}
+.footer-gradient--left{
+	float: left;
+	width: 50%;
+	min-height: 35px;
+	background-image: linear-gradient(to right top, rgba(255, 255, 255, 0) 50%, white 50%);
+}
+.footer-gradient--right{
+	float: left;
+	width: 50%;
+	min-height: 35px;
+	background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, white 50%);
+}
+iframe{
+	width: 100%;
+	height: 200px;
+	z-index: 5;
+}
 .page-footer--form-page{
 	width: 320px;
 	min-height: 284px;
@@ -5,8 +59,65 @@
 	text-align: center;
 	background-color: white;
 }
+.page-footer__logo{
+	display: block;
+	width: 145px;
+	height: 40px;
+	margin: 0 auto 40px;
+	
+}
 .social-links{
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	width: 176px;
+	min-height: 57px;
+	margin: 0 auto 28px;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			display: block;
+			float: left;
+			margin-right: 10px;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.social-links__item{
+	display: block;
+	width: 51px;
+	height: 51px;
+	background-image: url(../img/solial-icons.png);
+	background-repeat: no-repeat;
+}
+.social-links--tw{
+	background-position: 0 0;
+}
+.social-links--fb{
+	background-position: -52px 0;
+}
+.social-links--yt{
+	background-position: -103px 0;
+}
+.page-footer__copyright{
+	position: relative;
+	width: 215px;
+	min-height: 119px;
+	padding: 10px 10px 10px 95px;
+	text-align: left;
+	&__developer-name{
+		width: 100px;
+		height: 20px;
+		font-size: 14px;
+		font-family: "Open Sans Regular";
+		color: @dark-blue-font;
+	}
+}
+.copyright__developer-logo{
+	position: absolute;
+	top: 5px;
+	left: 196px;
+	width: 27px;
+	height: 34px;
 }

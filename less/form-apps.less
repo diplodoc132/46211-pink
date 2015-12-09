@@ -2,12 +2,18 @@
 	position: relative;
 	width: 284px;
 	min-height: 207px;
-	padding: 93px 18px 38px;
+	padding: 114px 18px 0;
 	background-color: @grey-bg;
 	ul{
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		li{
+			position: relative;
+			width: 200px;
+			height: 75px;
+			padding-left: 58px;
+		}
 	}
 }
 .form-legend--apps{
@@ -35,6 +41,9 @@
 }
 .label--apps:before{
     content: "";
+    position: absolute;
+    left: 0;
+    top:-8px;
     display: inline-block;
     width: 40px;
     height: 40px;

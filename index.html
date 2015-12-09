@@ -3,144 +3,188 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
     <title>HTML Academy: Пинк</title>
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="normalize.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
   </head>
   <body>
-    <header class="page-header">
-      <a href="" class="page-header__logo"><img src="img/logo.png" alt="pink"></a>
-      <nav class="page-header__nav">
-        <ul>
-          <li><a href="#">информация</a></li>
-          <li><a href="#">блог</a></li>
-          <li><a href="#">отзывы</a></li>
-          <li><a href="#">конкурс</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="intro">
-        <span class="intro__phrase">Взгляните на жизнь иначе!</span>
-        <div class="intro__bg-image"></div>
-      </div>
-      <section class="download-app">
-        <form action="">
-          <input class="download-app__btn" type="submit" name="download-app" value="Скачать приложение">
-        </form>
-        <div class="download-app__icons-container">
+    <div class="l-center-wrapper">
+      <header class="page-header">
+        <a href="" class="page-header__logo"><img src="img/logo.png" alt="pink"></a>
+        <div class="page-header__hamburger-container">
+          <span class="page-header__hamburger">
+        </div>
+        <nav class="page-header__nav">
           <ul>
-            <li><a href="" class="download-app-icon  download-app--apple"></a></li>
-            <li><a href="" class="download-app-icon  download-app--android"></a></li>
-            <li><a href="" class="download-app-icon  download-app--windows"></a></li>
+            <li><a href="#">информация</a></li>
+            <li><a href="#">блог</a></li>
+            <li><a href="#">отзывы</a></li>
+            <li><a href="#">конкурс</a></li>
           </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="intro">
+          <span class="intro__phrase">Взгляните на жизнь иначе!</span>
+          <div class="intro__bg-image"></div>
         </div>
-        <span class="download-app__available">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</span>
-      </section>
-      <section class="promo">
-        <span class="promo__promo-text">Устали от серости мегаполиcа?</span>
-        <span class="promo__promo-text">Нам есть, что Вам предложить!</span>
-        <div class="promo__gradient"></div>
-      </section>
-      <section class="features">
-        <div class="features__item">
-          <div class="features__title">Поднимает настроение</div>
-          <p class="features__description">Приложение позволит Вам победить осеннюю хандру и депрессию буквально в неколько кликов!</p>
-        </div>
-        <div class="features__item">
-          <div class="features__title">Меняет  мир вокруг</div>
-          <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="features__item">
-          <div class="features__title">Заводит новых друзей</div>
-          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
-      </section>
-      <section class="slider-feedback">
-        <input type="radio" id="btn-feedback-1" name="toggle" class="slider-feedback__toggle" checked>
-        <input type="radio" id="btn-feedback-2" name="toggle" class="slider-feedback__toggle">
-        <input type="radio" id="btn-feedback-3" name="toggle" class="slider-feedback__toggle">
-        <div class="slider-feedback__controls">
-          <label for="btn-feedback-1"></label>
-          <label for="btn-feedback-2"></label>
-          <label for="btn-feedback-3"></label>
-        </div>
-        <div class="slider-feedback__slides-container">
-          <div class="slider-feedback__slide">
-            <div class="slider-feddback__slide-title">Николай Петров-1</div>
-            <blockquote class="slider-feedback__slide-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
-          </div>
-          <div class="slider-feedback__slide">
-            <div class="slider-feddback__slide-title">Николай Петров-2</div>
-            <blockquote class="slider-feedback__slide-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
-          </div>
-          <div class="slider-feedback__slide">
-            <div class="slider-feddback__slide-title">Николай Петров-3</div>
-            <blockquote class="slider-feedback__slide-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
-          </div>
-        </div>
-        <div class="slider__gradient"></div>
-      </section>
-      <section class="slider-rates">
-        <input type="radio" id="btn-rates-1" name="toggle" class="slider-rates__toggle">
-        <input type="radio" id="btn-rates-2" name="toggle" class="slider-rates__toggle" checked>
-        <input type="radio" id="btn-rates-3" name="toggle" class="slider-rates__toggle">
-        <div class="slider-rates__controls">
-          <label for="btn-rates-1"></label>
-          <label for="btn-rates-2"></label>
-          <label for="btn-rates-3"></label>
-        </div>
-        <div class="slider-rates__slides-container">
-          <div class="slider-rates__slide">
-            <div class="slider-rates__title">
-              <div class="slider-rates__name">стандарт</div>
-              <div class="slider-rates__price">3,99 USD</div>
-            </div>
-            <ul class="slider-rates__features">
-              <li>розовый фильтр</li>
-              <li>смайлики</li>
-              <li>комментарии</li>
+        <section class="download-app">
+          <form action="">
+            <input class="download-app__btn" type="submit" name="download-app" value="Скачать приложение">
+          </form>
+          <div class="download-app__icons-container">
+            <ul>
+              <li><a href="" class="download-app-icon  download-app--apple"></a></li>
+              <li><a href="" class="download-app-icon  download-app--android"></a></li>
+              <li><a href="" class="download-app-icon  download-app--windows"></a></li>
             </ul>
           </div>
-          <div class="slider-rates__slide">
-            <div class="slider-rates__title">
-              <div class="slider-rates__name">стандарт</div>
-              <div class="slider-rates__price">3,99 USD</div>
-            </div>
-            <ul class="slider-rates__features">
-              <li>розовый фильтр</li>
-              <li>смайлики</li>
-              <li>комментарии</li>
-            </ul>
+          <span class="download-app__available">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</span>
+        </section>
+        <section class="promo">
+          <span class="promo__promo-text">Устали от серости мегаполиcа?</span>
+          <span class="promo__promo-text">Нам есть, что Вам предложить!</span>
+          <div class="promo__gradient"></div>
+        </section>
+        <section class="features">
+          <div class="features__item">
+            <div class="features__title">Поднимает настроение</div>
+            <p class="features__description">Приложение позволит Вам победить осеннюю хандру и депрессию буквально в неколько кликов!</p>
           </div>
-          <div class="slider-rates__slide">
-            <div class="slider-rates__title">
-              <div class="slider-rates__name">стандарт</div>
-              <div class="slider-rates__price">3,99 USD</div>
-            </div>
-            <ul class="slider-rates__features">
-              <li>розовый фильтр</li>
-              <li>смайлики</li>
-              <li>комментарии</li>
-            </ul>
+          <div class="features__item">
+            <div class="features__title">Меняет  мир вокруг</div>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-        <div class="contact-us__questions">Остались вопросы?<br>Свяжитесь с нами!</div>
-        <div class="contact-us__call-write-come">Звоните:</div>
-        <a class="contact-us__info">+7(812)5556666</a>
-        <div class="contact-us__call-write-come">Пишите:</div>
-        <a class="contact-us__info">mail@htmlacademy.ru</a>
-        <div class="contact-us__call-write-come">Приезжайте в гости:</div>
-        <div class="contact-us__info">ул. Большая Конюшенная, 19/8</div>
-        <div class="footer-gradient">
-          <div class="footer-gradient--left"></div>
-          <div class="footer-gradient--right"></div>
-        </div>
-        <div class="footer__map"></div>
-    </footer>
+          <div class="features__item">
+            <div class="features__title">Заводит новых друзей</div>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </section>
+        <section class="slider-feedback">
+          <input type="radio" id="btn-feedback-1" name="toggle_" value="1" class="slider-feedback__toggle" checked>
+          <input type="radio" id="btn-feedback-2" name="toggle_" value="2" class="slider-feedback__toggle">
+          <input type="radio" id="btn-feedback-3" name="toggle_" value="3" class="slider-feedback__toggle">
+          <div class="slider-feedback__controls">
+            <label for="btn-feedback-1"></label>
+            <label for="btn-feedback-2"></label>
+            <label for="btn-feedback-3"></label>
+          </div>
+          <div class="slider-feedback__slides-container">
+            <div class="slider-feedback__slide">
+              <div class="slider-feedback__slide-title">Николай Петров-1</div>
+              <blockquote class="slider-feedback__slide-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+            </div>
+            <div class="slider-feedback__slide">
+              <div class="slider-feedback__slide-title">Николай Петров-2</div>
+              <blockquote class="slider-feedback__slide-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+            </div>
+            <div class="slider-feedback__slide">
+              <div class="slider-feedback__slide-title">Николай Петров-3</div>
+              <blockquote class="slider-feedback__slide-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычное серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+            </div>
+          </div>
+          <div class="slider__gradient"></div>
+        </section>
+        <section class="slider-rates">
+          <input type="radio" id="btn-rates-1" name="toggle" class="slider-rates__toggle">
+          <input type="radio" id="btn-rates-2" name="toggle" class="slider-rates__toggle" checked>
+          <input type="radio" id="btn-rates-3" name="toggle" class="slider-rates__toggle">
+          <div class="slider-rates__controls">
+            <label for="btn-rates-1"></label>
+            <label for="btn-rates-2"></label>
+            <label for="btn-rates-3"></label>
+          </div>
+          <div class="slider-rates__slides-container">
+            <div class="slider-rates__slide-border"></div>
+            <div class="slider-rates__slide">
+              <div class="slider-rates__title">
+                <img src="img/hit.png" alt="" class="hit">
+                <div class="slider-rates__name">стандарт-1</div>
+                <div class="slider-rates__price">3,99 USD</div>
+              </div>
+              <ul class="slider-rates__features">
+                <li>розовый фильтр
+                  <div class="icon-check-container">
+                    <span class="icon-check"></span>
+                  </div>
+                </li>
+                <li>смайлики
+                  <div class="icon-check-container">
+                    <span class="icon-check"></span>
+                  </div>
+                </li>
+                <li>комментарии
+                  <div class="icon-check-container">
+                    <span class="icon-uncheck"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+                <div class="slider-rates__slide">
+              <div class="slider-rates__title">
+                <img src="img/hit.png" alt="" class="hit">
+                <div class="slider-rates__name">стандарт-1</div>
+                <div class="slider-rates__price">3,99 USD</div>
+              </div>
+              <ul class="slider-rates__features">
+                <li>розовый фильтр
+                  <div class="icon-check-container">
+                    <span class="icon-check"></span>
+                  </div>
+                </li>
+                <li>смайлики
+                  <div class="icon-check-container">
+                    <span class="icon-check"></span>
+                  </div>
+                </li>
+                <li>комментарии
+                  <div class="icon-check-container">
+                    <span class="icon-uncheck"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+                <div class="slider-rates__slide">
+              <div class="slider-rates__title">
+                <img src="img/hit.png" alt="" class="hit">
+                <div class="slider-rates__name">стандарт-1</div>
+                <div class="slider-rates__price">3,99 USD</div>
+              </div>
+              <ul class="slider-rates__features">
+                <li>розовый фильтр
+                  <div class="icon-check-container">
+                    <span class="icon-check"></span>
+                  </div>
+                </li>
+                <li>смайлики
+                  <div class="icon-check-container">
+                    <span class="icon-check"></span>
+                  </div>
+                </li>
+                <li>комментарии
+                  <div class="icon-check-container">
+                    <span class="icon-uncheck"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+          <div class="contact-us__questions">Остались вопросы?<br>Свяжитесь с нами!</div>
+          <div class="contact-us__call-write-come">Звоните:</div>
+          <a class="contact-us__info">+7(812)555-66-66</a>
+          <div class="contact-us__call-write-come">Пишите:</div>
+          <a class="contact-us__info">mail@htmlacademy.ru</a>
+          <div class="contact-us__call-write-come">Приезжайте в гости:</div>
+          <div class="contact-us__info">ул. Большая Конюшенная, 19/8</div>
+          <div class="footer-gradient">
+            <div class="footer-gradient--left"></div>
+            <div class="footer-gradient--right"></div>
+          </div>
+          <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7545.523466810948!2d30.320926229713304!3d59.939593603605694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21+Shop!5e0!3m2!1sru!2sru!4v1449505898336" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      </footer>
+    </div>
   </body>
 </html>
